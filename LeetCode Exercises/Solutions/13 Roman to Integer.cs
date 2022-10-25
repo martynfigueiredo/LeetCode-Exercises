@@ -65,9 +65,9 @@ namespace LeetCode_Exercises.Solutions
             };
             for (int i = 0; i < s.Length; i++)
             {
-                char currentRomanChar = s[i];
-                romanNumbers.TryGetValue(currentRomanChar, out int num);
-                if (i + 1 < s.Length && romanNumbers[s[i + 1]] > romanNumbers[currentRomanChar])
+                char currentRomanNumeral = s[i];
+                romanNumbers.TryGetValue(currentRomanNumeral, out int num);
+                if (i + 1 < s.Length && romanNumbers[s[i + 1]] > romanNumbers[currentRomanNumeral])
                 {
                     sum -= num;
                 }
